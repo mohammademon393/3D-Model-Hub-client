@@ -7,6 +7,8 @@ import { RouterProvider } from "react-router/dom";
 import Root from './Layout/Root.jsx';
 import Home from './Pages/Home.jsx';
 import AllModels from './Pages/AllModels.jsx';
+import BrowseModels from './Pages/BrowseModels.jsx';
+import Profile from './Pages/Profile.jsx';
 
 
 
@@ -16,14 +18,22 @@ const router = createBrowserRouter([
     Component: Root,
     children: [
       {
-       index: true,
+        index: true,
         Component: Home,
       },
       {
         path: "/allModels",
         Component: AllModels,
-      }
-    ]
+      },
+      {
+        path: "/browseModels",
+        Component: BrowseModels,
+      },
+      {
+        path: "/profile",
+        Component: Profile,
+      },
+    ],
   },
 ]);
 

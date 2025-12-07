@@ -26,9 +26,24 @@ const Navbar = () => {
             <a>All Models</a>
           </li>
         </NavLink>
-        <NavLink>
+        <NavLink
+          to={"browseModels"}
+          className={({ isActive }) =>
+            isActive ? "nav-item active" : "nav-item"
+          }
+        >
           <li>
-            <a>DeshBoard</a>
+            <a>Browse Models</a>
+          </li>
+        </NavLink>
+        <NavLink
+          to={"/profile"}
+          className={({ isActive }) =>
+            isActive ? "nav-item active" : "nav-item"
+          }
+        >
+          <li>
+            <a>Profile</a>
           </li>
         </NavLink>
       </>
