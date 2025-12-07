@@ -1,2 +1,22 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+
+
+
+
+
+/* active route navigation */
+.nav-item {
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+}
+
+.nav-item.active {
+    color: #632EE3;
+    /* primary color */
+    font-weight: bold;
+    border-bottom: 2px solid #632EE3;
+}
