@@ -24,6 +24,7 @@ const router = createBrowserRouter([
       {
         path: "/allModels",
         Component: AllModels,
+        loader: () => fetch("http://localhost:3000/allModels"),
       },
       {
         path: "/browseModels",
